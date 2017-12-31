@@ -85,7 +85,7 @@
     "vue-template-compiler": "2.5.10",
     "webpack": "3.10.0",
     "webpack-bundle-analyzer": "2.9.1",
-    "webpack-dev-server": "2.7.1",
+    "webpack-dev-server": "2.7.1",//把webpack-dev-server 2.9.7版本改为2.7.1版本，解决IE9、IE10中JS语法错误问题
     "webpack-merge": "4.1.1"
   },
   "engines": {
