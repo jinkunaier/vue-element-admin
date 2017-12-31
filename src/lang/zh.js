@@ -43,7 +43,10 @@ export default {
     exportZip: 'zip',
     theme: '换肤',
     clipboardDemo: 'clipboard',
-    i18n: '国际化'
+    i18n: '国际化',
+    close: '关闭当前',
+    closeOthersTags: '关闭其它',
+    closeAllTags: '关闭所有'
   },
   navbar: {
     logOut: '退出登录',
