@@ -44,9 +44,9 @@ export default {
     theme: 'Theme',
     clipboardDemo: 'Clipboard',
     i18n: 'I18n',
-    close: 'Close',
-    closeOthersTags: 'Close Others',
-    closeAllTags: 'Close All'
+    close: 'Close ',
+    closeOthersTags: 'Close Others ',
+    closeAllTags: 'Close All '
   },
   navbar: {
     logOut: 'Log Out',
