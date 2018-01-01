@@ -18,10 +18,10 @@
 
 <script>
   import ScrollPane from '@/components/ScrollPane'
-  import {generateTitle} from '@/utils/i18n'
+  import { generateTitle } from '@/utils/i18n'
 
   export default {
-    components: {ScrollPane},
+    components: { ScrollPane },
     data() {
       return {
         visible: false,

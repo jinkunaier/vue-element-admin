@@ -158,15 +158,15 @@
 </template>
 
 <script>
-  import {fetchList, fetchPv, createArticle, updateArticle} from '@/api/article'
+  import { fetchList, fetchPv, createArticle, updateArticle } from '@/api/article'
   import waves from '@/directive/waves' // 水波纹指令
   import { parseTime } from '@/utils'
 
   const calendarTypeOptions = [
-    {key: 'CN', display_name: 'China'},
-    {key: 'US', display_name: 'USA'},
-    {key: 'JP', display_name: 'Japan'},
-    {key: 'EU', display_name: 'Eurozone'}
+    { key: 'CN', display_name: 'China' },
+    { key: 'US', display_name: 'USA' },
+    { key: 'JP', display_name: 'Japan' },
+    { key: 'EU', display_name: 'Eurozone' }
   ]
 
   // arr to obj ,such as { CN : "China", US : "USA" }
@@ -196,7 +196,7 @@
         },
         importanceOptions: [1, 2, 3],
         calendarTypeOptions,
-        sortOptions: [{label: 'ID Ascending', key: '+id'}, {label: 'ID Descending', key: '-id'}],
+        sortOptions: [{ label: 'ID Ascending', key: '+id' }, { label: 'ID Descending', key: '-id' }],
         statusOptions: ['published', 'draft', 'deleted'],
         showReviewer: false,
         temp: {
@@ -217,9 +217,9 @@
         dialogPvVisible: false,
         pvData: [],
         rules: {
-          type: [{required: true, message: 'type is required', trigger: 'change'}],
-          timestamp: [{type: 'date', required: true, message: 'timestamp is required', trigger: 'change'}],
-          title: [{required: true, message: 'title is required', trigger: 'blur'}]
+          type: [{ required: true, message: 'type is required', trigger: 'change' }],
+          timestamp: [{ type: 'date', required: true, message: 'timestamp is required', trigger: 'change' }],
+          title: [{ required: true, message: 'title is required', trigger: 'blur' }]
         },
         downloadLoading: false
       }
