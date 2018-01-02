@@ -22,6 +22,10 @@ export default {
     },
     className: {
       type: String
+    },
+    ownerCompClass: {
+      type: String,
+      default: 'stickyOwner'
     }
   },
   data() {
@@ -37,13 +41,19 @@ export default {
   },
   mounted() {
     this.height = this.$el.getBoundingClientRect().height
-    window.addEventListener('scroll', this.handleScroll)
+    var ownerComps = document.getElementsByClassName(this.ownerCompClass)
+    if (ownerComps.length > 0) {
+      ownerComps[0].addEventListener('scroll', this.handleScroll)
+    }
   },
   activated() {
     this.handleScroll()
   },
   destroyed() {
-    window.removeEventListener('scroll', this.handleScroll)
+    var ownerComps = document.getElementsByClassName(this.ownerCompClass)
+    if (ownerComps.length > 0) {
+      ownerComps[0].addEventListener('scroll', this.handleScroll)
+    }
   },
   methods: {
     sticky() {
